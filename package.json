@@ -1,0 +1,12 @@
+{
+  "name": "cnabBuilder",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/gadielkalleb/cnabBuilder.git",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "yargs": "^16.2.0"
+  }
+}
