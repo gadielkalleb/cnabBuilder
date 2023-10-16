@@ -40,6 +40,7 @@ item dentro da linha P:
 const log = console.log
 
 console.time('leitura Async')
+
 readFile(file, 'utf8')
   .then(file => {
     const cnabArray = file.split('\n')
@@ -70,64 +71,3 @@ readFile(file, 'utf8')
     console.log("🚀 ~ file: cnabRows.js ~ line 76 ~ error", error)
   })
 console.timeEnd('leitura Async')
-
-
-
-// const bodyPQR = (conditional) => {
-
-//   let sliceTotal = 0
-//   let body = []
-
-//   while (sliceTotal <= conditional) {
-//     body.push(sliceArrayPosition(cnabBodyPQR, sliceTotal, sliceTotal + 3))
-//     sliceTotal = sliceTotal + 3
-//   }
-
-//   return body
-// }
-
-// const header = {
-//   controle: {
-//     banco: [0, 3],
-//     lote: [3, 7],
-//     registro: [8, 8],
-//   },
-//   servico: {
-//     operacao: [9, 9],
-//     servico: [10, 11],
-//     CNAB: [12, 13],
-//     layout: [14, 16]
-//   },
-//   CNAB: [17, 17]
-// }
-
-// 4.72ms
-// console.time('tempo de execucao com slice')
-// console.log(`----- slice ----- \x1b[32m${sliceArrayPosition(cnabHeader[0], ...header.controle.banco).join('')}\x1b[0m${sliceArrayPosition(cnabHeader[0], 3).join('')} slice`);
-// console.timeEnd('tempo de execucao com slice')
-
-// 0.272ms
-// console.time('tempo de execucao com subString')
-// console.log(`----- substring ----- \x1b[32m${cnabHeader[1].substring(0, 3)}\x1b[0m${cnabHeader[0].substring(3)} substring`);
-// console.timeEnd('tempo de execucao com subString')
-
-// console.log("🚀 ~ file: cnabRows.js ~ line 99 ~ header", sliceArrayPosition(cnabHeader[1], ...header.controle.banco).join(''))
-// console.log("🚀 ~ file: cnabRows.js ~ line 99 ~ header", sliceArrayPosition(cnabHeader[1], ...header.controle.lote).join(''))
-// console.log("🚀 ~ file: cnabRows.js ~ line 99 ~ header", sliceArrayPosition(cnabHeader[1], ...header.controle.registro).join(''))
-
-// console.log("🚀 ~ file: cnabRows.js ~ line 99 ~ header", sliceArrayPosition(cnabHeader[1], ...header.servico.operacao))
-// console.log("🚀 ~ file: cnabRows.js ~ line 99 ~ header", sliceArrayPosition(cnabHeader[1], ...header.servico.servico))
-// console.log("🚀 ~ file: cnabRows.js ~ line 99 ~ header", sliceArrayPosition(cnabHeader[1], ...header.servico.layout))
-// console.log("🚀 ~ file: cnabRows.js ~ line 99 ~ header", sliceArrayPosition(cnabHeader[1], ...header.servico.CNAB))
-// console.log("🚀 ~ file: cnabRows.js ~ line 99 ~ header", sliceArrayPosition(cnabHeader[1], ...header.CNAB))
-
-// const inbound240 = {
-//   options: {
-//     initialLine: 1,
-//     idConfiguration: {
-//       from: 1,
-//       to: 1,
-//       type: 'string'
-//     }
-//   }
-// }
