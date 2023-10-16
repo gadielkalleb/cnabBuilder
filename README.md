@@ -8,7 +8,7 @@ Ele é dividido por segmentos *P*, *Q* e *R*, cada linha começa com um codigo q
 ```
 0010001300002Q 012005437734000407NTT BRASIL COMERCIO E SERVICOS DE TECNOLAVENIDA DOUTOR CHUCRI ZAIDAN, 1240 ANDARVILA SAO FRANCI04711130SAO PAULO      SP0000000000000000                                        000
 ```
-Neste exemplo ele o **Q** aparece na posição/coluna 14, cada posição representa algo dentro do arquivo cnab.
+Neste exemplo o **Q** aparece na posição/coluna 14, cada posição representa algo dentro do arquivo cnab.
 
 
 hoje ao rodar:
