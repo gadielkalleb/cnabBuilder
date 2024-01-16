@@ -63,6 +63,7 @@ hoje a ferramenta busca uma posição e loga isso no terminal.
 
 **4. Exportação para JSON:**
    - Criar um novo arquivo em formato JSON contendo as informações essenciais:
+      - precisa ser uma nova opção no CLI
       - Nome da empresa.
       - Endereço completo (incluindo avenida, rua e CEP).
       - Posições no arquivo CNAB onde as informações foram localizadas.
