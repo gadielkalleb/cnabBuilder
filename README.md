@@ -46,11 +46,28 @@ Exemplos:
 
 hoje a ferramenta busca uma posição e loga isso no terminal.
 
-desafio consiste:
+**Desafio consiste**
 
-* poder passar na CLI o local do arquivo.
-* pesquisar por nome da empresa, e mostrar em que posição que ela foi achada e qual o tipo de segmento ela pertence.
+**1. Leitura de Arquivo CNAB:**
+   - Permitir que o usuário forneça o caminho do arquivo CNAB pela linha de comando (CLI).
+   - O campo do arquivo é opcional; caso não seja especificado, o programa deve informar ao usuário que será utilizado um arquivo padrão.
 
-* **Bonus**, ler o cnab e escrever um novo arquivo em formato JSON, contendo nome e endereço da empresa.
+**2. Busca por Segmentos:**
+   - Implementar a capacidade de buscar por segmentos específicos no arquivo CNAB.
+   - Exibir o nome completo das empresas associadas ao segmento informado.
 
-O candidato tem total liberdade de mudar a estrutura atual desse projeto, a ideía é ver a criatividade de resolver esse problema.
+**3. Pesquisa por Nome da Empresa:**
+   - Desenvolver uma funcionalidade que permita a busca por nome de empresa no arquivo CNAB.
+   - Mostrar o nome completo da empresa, não apenas o fragmento usado na pesquisa.
+   - Indicar a posição exata onde a empresa foi encontrada e informar a qual segmento ela pertence.
+
+**4. Exportação para JSON:**
+   - Criar um novo arquivo em formato JSON contendo as informações essenciais:
+      - Nome da empresa.
+      - Endereço completo (incluindo avenida, rua e CEP).
+      - Posições no arquivo CNAB onde as informações foram localizadas.
+
+**Bonus** O candidato tem total liberdade de mudar a estrutura atual desse projeto, a ideía é ver a criatividade de resolver esse problema.
+
+Este desafio visa avaliar suas habilidades de manipulação de arquivos, busca eficiente de dados e geração de saída estruturada em um formato JSON. Boa sorte!
+
